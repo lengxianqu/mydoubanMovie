@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Cheader></Cheader>
+    <v-header></v-header>
     <transition name="fade">
         <keep-alive exclude="moviesDetail">
             <router-view/>
@@ -11,11 +11,11 @@
 </template>
 
 <script>
-import Cheader from './components/common/header.vue';
+import Cheader from './components/common/header.vue'
 export default {
   name: 'app',
-  components:{
-      'header':Cheader
+  components: {
+    'v-header': Cheader
   }
 }
 </script>
